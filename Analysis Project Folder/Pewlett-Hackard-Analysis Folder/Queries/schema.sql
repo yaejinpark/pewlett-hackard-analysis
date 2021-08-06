@@ -21,8 +21,8 @@ create table employees(
 
 -- Department managers table
 create table dept_manager(
-	emp_no int not null,
 	dept_no VARCHAR(4) not NULL,
+	emp_no int not null,
 	from_date date not null,
 	to_date date not null,
 	
@@ -45,11 +45,10 @@ CREATE TABLE salaries (
 -- Create titles table
 create table titles(
 	emp_no int not null,
-	salary int not null,
+	title varchar(40) not null,
 	from_date date not null,
 	to_date date not null,
-	foreign key (emp_no) references employees (emp_no),
-	primary key (emp_no)
+	foreign key (emp_no) references employees (emp_no)
 );
 
 -- Create department employees table
