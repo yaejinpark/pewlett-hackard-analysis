@@ -40,3 +40,11 @@ order by 1 desc;
 
 -- Deliverable 2
 -- create a mentorship-eligibility table that holds the current employees who were born between January 1, 1965 and December 31, 1965.
+select distinct on (e.emp_no) e.emp_no,e.first_name,e.last_name,de.from_date,de.to_date,ti.title
+into mentorship_eligibility
+from employees as e
+inner join dept_emp as de
+on e.emp_no = de.emp_no
+inner join titles as ti
+on de.emp_no = ti.emp_no
+where (de.to_date = '9999-01-01') and (e.birth_date between '1965-01-01' and '1965-12-31');
