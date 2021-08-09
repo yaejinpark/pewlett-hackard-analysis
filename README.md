@@ -32,7 +32,11 @@ The following screenshots show the query written to obtain the table of employee
 ## Summary
 
 ### How many roles will need to be filled as the "silver tsunami" begins to make an impact?
-[Response]
+This question can be answered by looking at the count of retirees in each title from retiring_titles.csv. The title with the largest number of retirees is 'Senior Engineer' with 29,414 employees soon to retire, and the smallest is 'Manager' with 2 soon-to-retire employees. The total count of the retirees came to a whopping 90,398 in total. This is the same number of roles that need to be filled by either existing employees or with by new hires. The next step is to find out first how many current employees can be mentored to take these roles and see if new hires are needed.
 
 ### Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
-[Response]
+Looking at the mentorship eligibility table, there are quite a few employees though it's uncertain if there are enough. Counting those who were born between January 1, 1965 and December 31, 1965 and grouping the counts into their titles, I was able to obtain the following result:
+
+![Not Enough People](https://github.com/yaejinpark/pewlett-hackard-analysis/blob/main/Resources/not_enough_people.png)
+
+Unfortunately, the number of currently eligible employees are not even close to fill the empty roles to be left by the 'silver tsunami.' It looks like Pewlett Hackard will have to go through a major hiring season.
