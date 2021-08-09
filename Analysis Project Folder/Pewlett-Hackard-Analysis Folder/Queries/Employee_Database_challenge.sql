@@ -39,3 +39,4 @@ order by 1 desc;
 -- -------------------------------------------------------------------------------------------
 
 -- Deliverable 2
+-- create a mentorship-eligibility table that holds the current employees who were born between January 1, 1965 and December 31, 1965.
